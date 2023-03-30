@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Paswsword Generator</title>
+</head>
+
+<body>
+    <div id="main-container">
+        <div class="password-container">
+            <p id="password-el">Press Generate</p>
+        </div>
+        <div class="buttons-container">
+            <button class="generate-btn" role="button" onclick="genPass()" >Generate</button>
+            <button class="copy-btn" onclick="copyPass()">Copy</button>
+        </div>
+        <div class="slider-container">
+            <input type="range" id="lenght-selector" name="lenght" min="8" max="16">
+        </div>
+        <div class="selectors-container">
+            <div class="lenght-div">
+                <p>Password Lenght: <output id="value"></output></p>
+            </div>
+            <div class="symbols-div">
+                <input type="checkbox" id="symbols-cb" onclick="addSymbols()">
+                <p>123 - !@#</p>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
